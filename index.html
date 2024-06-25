@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Website</title>
+    <style>
+    .center1 {
+    text-align: center;
+    padding: 60px;
+    height: 50px;
+    padding: 50px;
+    text-shadow: 1px 1px gray;
+    }
+    
+    h1{
+    text-align: center;
+    color: red; 
+    }
+    
+    .center2 {
+    text-align: center;
+    padding: 60px
+    height: 50px;
+    padding: 50px;
+    text-shadow: 1px 1px gray;
+    }
+    
+    .btn {
+    text-align: center;
+    }
+    
+    body {
+    background-image:url("asd.jpg");
+    background-size:cover;
+    background-repeat:repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
+    
+    label {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;   
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+       
+            if (username === "user" && password === "password") {
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class = "center1">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+   </div>
+   
+   <div class = "center2">
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+   </div>
+   
+   <div class = "btn">
+        <input type="button" value="Login" onclick="validateLogin()">
+   </div>
+</body>
+</html>
